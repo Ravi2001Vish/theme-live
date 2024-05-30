@@ -1,7 +1,7 @@
 <section class="all-collections">
   <h1>Featured Collections</h1>
   <div class="collection-container">
-    {% comment %} <div class="all-collections-wrapper">
+    <div class="all-collections-wrapper">
       {% for collection in collections %}
         <div class="collection-card">
           <img
@@ -13,14 +13,14 @@
           <h3>{{- collection.title | link_to: collection.url }}</h3>
         </div>
       {% endfor %}
-    </div> {% endcomment %}
+    </div>
 
   
   </div>
 </section>
 
 <style>
-  .all-collections {
+  {% comment %} .all-collections {
     background: {{ section.settings.background }}
     ;
     color: {{ section.settings.text_color }}
@@ -31,7 +31,7 @@
   .collection-container {
     position: relative;
     overflow-x: scroll;
-  }
+  } {% endcomment %}
 
   .all-collections-wrapper {
     display: flex;
