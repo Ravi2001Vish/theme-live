@@ -1,4 +1,108 @@
-<section>
-<div><h1>my name </h1>
-</div>
+<section class="all-collections">
+  <h1>Featured Collections</h1>
+  <div class="collection-container">
+    <div class="all-collections-wrapper">
+      {% for collection in collections %}
+        <div class="collection-card">
+          <img
+            width="300"
+            height="300"
+            loading="lazy"
+            src="{{ collection.featured_image | image_url}}"
+          >
+          <h3>{{- collection.title | link_to: collection.url }}</h3>
+        </div>
+      {% endfor %}
+    </div>
+
+  
+  </div>
 </section>
+
+<style>
+  {% comment %} .all-collections {
+    background: {{ section.settings.background }}
+    ;
+    color: {{ section.settings.text_color }}
+    ;
+    padding: 10px;
+  }
+
+  .collection-container {
+    position: relative;
+    overflow-x: scroll;
+  } {% endcomment %}
+
+  .all-collections-wrapper {
+    display: flex;
+    transition: transform 0.3s ease; /* Add smooth transition effect */
+  }
+
+  .collection-card {
+    background-image: url("{{ 'one.png' | asset_url }}");
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background-size: cover;
+    background-position: center;
+  }
+
+  .collection-card h3 a {
+    color: black;
+    text-decoration: none
+  }
+
+  .collection-card a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+{% comment %} <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const wrapper = document.querySelector('.all-collections-wrapper');
+    const scrollLeftButton = document.querySelector('.scroll-left');
+    const scrollRightButton = document.querySelector('.scroll-right');
+
+    scrollLeftButton.addEventListener('click', function () {
+      wrapper.scrollBy({
+        left: -300, // Adjust based on your card width
+        behavior: 'smooth',
+      });
+    });
+
+    scrollRightButton.addEventListener('click', function () {
+      wrapper.scrollBy({
+        left: 300, // Adjust based on your card width
+        behavior: 'smooth',
+      });
+    });
+  });
+</script> {% endcomment %}
+
+{% schema %}
+{
+  "name": "all-collections",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background",
+      "label": "Background",
+      "default": "#F4F4F4"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "all-collections"
+    }
+  ]
+}
+{% endschema %}
