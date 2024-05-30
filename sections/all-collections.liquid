@@ -2,7 +2,7 @@
   <h1>Featured Collections</h1>
   <div class="collection-container">
     <div class="all-collections-wrapper">
-      {% for collection in collections %}
+      {% comment %} {% for collection in collections %}
         <div class="collection-card">
           <img
             width="300"
@@ -12,7 +12,7 @@
           >
           <h3>{{- collection.title | link_to: collection.url }}</h3>
         </div>
-      {% endfor %}
+      {% endfor %} {% endcomment %}
     </div>
 
   
