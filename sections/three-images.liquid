@@ -42,13 +42,13 @@
     background-size: cover;
     background-position: center;
   }
-  .one-user {
+  {% comment %} .one-user {
     background-image: url("{{ section.settings.image | image_url }}");
     width: 33.333%;
     height: 500px;
     background-size: cover;
     background-position: center;
-  }
+  } {% endcomment %}
   .two {
     background-image: url("{{ 'two.png' | asset_url }}");
     width: 33.333%;
