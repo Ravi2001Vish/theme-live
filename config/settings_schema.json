@@ -3,8 +3,9 @@
         "name": "theme_info",
         "theme_name": "Nike",
         "theme_author": "Stephano",
-        "theme_version": "2.8.4"
-      
+        "theme_version": "2.8.4",
+        "theme_documentation_url": "",
+        "theme_support_url": ""
       },
     {
         "name": "Colors",
