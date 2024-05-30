@@ -1,19 +1,19 @@
 <section class="all-collections">
   <h1>Featured Collections</h1>
   <div class="collection-container">
-    <div class="all-collections-wrapper">
+    {% comment %} <div class="all-collections-wrapper">
       {% for collection in collections %}
         <div class="collection-card">
-          {% comment %} <img
+          <img
             width="300"
             height="300"
             loading="lazy"
             src="{{ collection.featured_image | image_url}}"
           >
-          <h3>{{- collection.title | link_to: collection.url }}</h3> {% endcomment %}
+          <h3>{{- collection.title | link_to: collection.url }}</h3>
         </div>
       {% endfor %}
-    </div>
+    </div> {% endcomment %}
 
   
   </div>
@@ -46,7 +46,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+   background-size: cover;
     background-position: center;
   }
 
