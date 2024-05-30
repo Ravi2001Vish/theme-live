@@ -5,12 +5,12 @@
       {% assign counter = 0 %}
       {% for block in section.blocks %}
 		<div class="productSlide" id="slide{{ counter }}">
-          {% comment %} <div class="slide" style="background-image:url({{block.settings.slideImg | img_url: '1000x' }});">
+           <div class="slide" style="background-image:url({{block.settings.slideImg | img_url: '1000x' }});">
             
             <!-- all slide content in here -->
             <!-- also feel free to take off the background image and change the width of any of this, its not needed to make it work -->
             
-          </div> {% endcomment %}
+          </div>           
           {% assign counter = counter | plus: 1 %}
         </div>
       {% endfor %}
