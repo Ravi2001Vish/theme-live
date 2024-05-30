@@ -5,21 +5,21 @@
       {% assign counter = 0 %}
       {% for block in section.blocks %}
 		<div class="productSlide" id="slide{{ counter }}">
-          <div class="slide" style="background-image:url({{block.settings.slideImg | img_url: '1000x' }});">
+          {% comment %} <div class="slide" style="background-image:url({{block.settings.slideImg | img_url: '1000x' }});">
             
             <!-- all slide content in here -->
             <!-- also feel free to take off the background image and change the width of any of this, its not needed to make it work -->
             
-          </div>
+          </div> {% endcomment %}
           {% assign counter = counter | plus: 1 %}
         </div>
       {% endfor %}
    </div>
 </div>
 
-  <img src="{{ 'Screenshot_20240111_122532.png' | asset_url }}" alt="Screenshot_20240111_122532" height="100px" width="100px">
-  <img src="{{ 'bhai.jpg' | asset_url }}" alt="second image" height="100px" width="100px">
-  <img src="{{ 'bhai.jpg' | asset_url }}" alt="second image" height="100px" width="100px">
+  <img  class="left" onclick="slideLeft()" src="{{ 'Screenshot_20240111_122532.png' | asset_url }}" alt="Screenshot_20240111_122532" height="100px" width="100px">
+  <img  class="right" onclick="slideRight()" src="{{ 'bhai.jpg' | asset_url }}" alt="second image" height="100px" width="100px">
+  {% comment %} <img  class="left" onclick="slideLeft()" src="{{ 'bhai.jpg' | asset_url }}" alt="second image" height="100px" width="100px"> {% endcomment %}
 </section>
 
 <style>
