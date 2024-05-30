@@ -20,7 +20,7 @@
 </section>
 
 <style>
-  {% comment %} .all-collections {
+ .all-collections {
     background: {{ section.settings.background }}
     ;
     color: {{ section.settings.text_color }}
@@ -31,7 +31,7 @@
   .collection-container {
     position: relative;
     overflow-x: scroll;
-  } {% endcomment %}
+  } 
 
   .all-collections-wrapper {
     display: flex;
@@ -60,7 +60,7 @@
   }
 </style>
 
-{% comment %} <script>
+ <script>
   document.addEventListener('DOMContentLoaded', function () {
     const wrapper = document.querySelector('.all-collections-wrapper');
     const scrollLeftButton = document.querySelector('.scroll-left');
@@ -80,8 +80,7 @@
       });
     });
   });
-</script> {% endcomment %}
-
+</script> 
 {% schema %}
 {
   "name": "all-collections",
