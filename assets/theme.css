@@ -24,6 +24,10 @@ justify-content: center;
    color: white;
    font-weight: bold;
  }
+ .announcement-bar:hover{
+   background-color: red;
+   transition: 0.6s;
+ }
  .announcement-bar span {
    position: absolute;
    top: 12px;
