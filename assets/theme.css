@@ -13,6 +13,14 @@ body {
  .announcement-bar {
    text-align: center;
    font-weight: bold;
+   height: 43px;
+   position: relative;
+
+ }
+ .announcement-bar span {
+   position: absolute;
+   top: 0;
+   right: 0;
  }
 
 
