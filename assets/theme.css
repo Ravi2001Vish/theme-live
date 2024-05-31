@@ -16,6 +16,7 @@ align-items: center;
 justify-content: center;
    height: 43px;
    position: relative;
+   background-color: #4770db;
 
  }
  .announcement-bar span {
