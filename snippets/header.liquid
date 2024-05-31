@@ -1,7 +1,29 @@
-<nav>
-    <header>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quos eum nihil illo! Laborum necessitatibus iure corrupti vel eum repellendus adipisci voluptatibus obcaecati numquam eligendi tempora quos, repudiandae possimus distinctio. xz
-        </p>
-    </header>
-</nav>
+<header class="site-header">
+  <div class="container">
+    <div class="grid">
+      <!-- Logo -->
+      <div class="grid__item medium-up--one-quarter">
+        <h1 class="site-header__logo">
+          <a href="{{ shop.url }}" class="site-header__logo-image">
+            <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}">
+          </a>
+        </h1>
+      </div>
+
+      <!-- Navigation Menu -->
+      <div class="grid__item medium-up--three-quarters text-right">
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            {% for link in linklists.main-menu.links %}
+              <li class="site-nav__item">
+                <a href="{{ link.url }}" class="site-nav__link">
+                  {{ link.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
