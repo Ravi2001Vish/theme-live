@@ -11,8 +11,9 @@ body {
  */
 
  .announcement-bar {
-   text-align: center;
-   font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
    height: 43px;
    position: relative;
 
