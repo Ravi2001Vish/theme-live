@@ -1,7 +1,7 @@
 body {
-    background-color: "{{ settings.bg }}";
-    padding: 0;
-    margin: 0;
+  background-color: "{{ settings.bg }}";
+  padding: 0;
+  margin: 0;
 }
 
 /**
@@ -10,69 +10,26 @@ body {
  * --------------------------------------------------------------------
  */
 
- .announcement-bar {
-display: flex;
-align-items: center;
-justify-content: center;
-   height: 43px;
-  
-   background-color: #4770db;
- 
+.announcement-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
 
- }
- .announcement-bar p{
-   color: white;
-   font-weight: bold;
- }
- .announcement-bar:hover{
-   background-color: red;
-   transition: 0.6s;
- }
- .announcement-bar:hover p {
-   color: white;
- }
+  background-color: #4770db;
+}
+.announcement-bar p {
+  color: white;
+  font-weight: bold;
+}
+.announcement-bar:hover {
+  background-color: red;
+  transition: 0.6s;
+}
+.announcement-bar:hover p {
+  color: white;
+}
 
-
-
- .notfound {
-   background-color: rgb(226, 226, 226);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh; /* Set the height to the full viewport height */
- }
- .collection{
-   background-color: rgb(163, 58, 23);
- }
- .section-image img {
-   border-radius: 10px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.slideOverflow{
-   overflow: hidden;
-   width: 100%;
-   height: 47vw;
-   position: relative;
-}
-.productSlideContainer{
-   display:flex;
-   position:absolute;
-   top:0px;
-   left:0px;
-   width:auto;
-   height:100%;
-   transition:all .2s;
-}
-.slide{
-   width: auto;
-   height: 100%;
-   background-size: cover;
-   background-position: center center;
-   position:relative;
-}
-nav{
-   background-color: blue;
+nav {
+  background-color: blue;
 }
