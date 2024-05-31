@@ -28,13 +28,13 @@ justify-content: center;
    background-color: red;
    transition: 0.6s;
  }
- .announcement-bar span {
+ /* .announcement-bar span {
    position: absolute;
    top: 12px;
    right: 15px;
    font-family: sans-serif;
    color: white;
- }
+ } */
 
 
  .notfound {
