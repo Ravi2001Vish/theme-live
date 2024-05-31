@@ -17,9 +17,12 @@ justify-content: center;
    height: 43px;
    position: relative;
    background-color: #4770db;
+ 
+
+ }
+ .announcement-bar p{
    color: white;
    font-weight: bold;
-
  }
  .announcement-bar span {
    position: absolute;
