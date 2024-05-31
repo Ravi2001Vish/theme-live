@@ -2,7 +2,7 @@
   
     <div class="announcement-bar" id="announce">
 
-      <p>Welcome to my website</p>
+      <p id="para">Welcome to my website</p>
       <span onclick="hide()" >X</span>
     </div>
 
@@ -11,6 +11,7 @@
 <script>
   function hide(){
     let hidediv = document.getElementById("announce")
-    hidediv.style.display="none"
+    hidediv.style.width="0px"
+    document.getElementById("para").style.display ="none"
   }
    </script>
