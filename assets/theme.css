@@ -73,3 +73,6 @@ justify-content: center;
    background-position: center center;
    position:relative;
 }
+nav{
+   background-color: blue;
+}
