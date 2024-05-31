@@ -1,5 +1,8 @@
-{% if settings.enable_announcement_bar %}
-  <div class="announcement-bar">
-    <p>hiiiiii</p>
-  </div>
-{% endif %}
+<section>
+  {% if settings.enable_announcement_bar %}
+    <div class="announcement-bar">
+      <h1>{{ settings.announcement_heading }}</h1>
+      <p>{{ settings.announcement_text }}</p>
+    </div>
+  {% endif %}
+</section>
